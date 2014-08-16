@@ -1,11 +1,10 @@
-require 'bike_container'
+require './lib/bike_container'
+require './lib/bike'
 
-class ContainerHolder; include BikeContainer; end
-
-describe BikeContainer do
+shared_examples 'a bike container' do
 
   let(:bike)    { Bike.new            }
-  let(:holder)  { ContainerHolder.new }
+  let(:holder)  { described_class.new }
 
   def fill_holder holder
     10.times { holder.store(Bike.new) }
