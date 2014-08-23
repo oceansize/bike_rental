@@ -1,4 +1,4 @@
-require './lib/docking_station'
+require 'docking_station'
 
 describe DockingStation do
 
@@ -6,6 +6,9 @@ describe DockingStation do
 
   it 'should allow setting default capacity on initialising' do
     expect(station.capacity).to eq 999
+  end
+
+  it '' do
   end
 
 end

@@ -23,8 +23,8 @@ module BikeContainer
     bikes << bike
   end
 
-  def release bike
-    @bikes.delete bike
+  def release_bike
+    bikes.pop
   end
 
   def full?

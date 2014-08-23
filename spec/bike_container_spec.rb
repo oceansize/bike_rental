@@ -1,6 +1,3 @@
-require './lib/bike_container'
-require './lib/bike'
-
 shared_examples 'a bike container' do
 
   let(:bike)    { Bike.new            }
@@ -18,7 +15,7 @@ shared_examples 'a bike container' do
 
   it 'should release a bike' do
     holder.store(bike)
-    holder.release(bike)
+    holder.release_bike
     expect(holder.bike_count).to eq 0
   end
 

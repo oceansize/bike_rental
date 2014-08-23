@@ -1,5 +1,4 @@
-require_relative './bike_container_spec'
-require './lib/van'
+require 'van'
 
 describe Van do
 
